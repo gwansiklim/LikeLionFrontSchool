@@ -157,3 +157,22 @@ body {
     margin-left: 180px;
     text-align: center;
 }
+
+#no-mobile {
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;   
+}
+
+@media screen and (min-width: 900px) {
+    #no-mobile {
+        display: none;
+    }
+}
