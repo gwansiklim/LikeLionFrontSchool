@@ -30,102 +30,95 @@
 
 body {
     background-color: #5b2386;
+    color: white;
     font-family: 'Noto Sans KR';
     width: 100%;
     height: 100%;
+    text-align: center;
+}
+header, main, footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0pc;
 }
-.clock img{
-    position: relative;
+.clock{
     width: 270px;
     height: 270px;
-    margin: 1px 230px;
-
 }
-.title img {
+.title {
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     width: 590px;
     height: 110px;
-    margin-top: -250px;
-    margin-left: 70px;
-
+    margin-top: 90px;
+    margin-left: -440px;
 }
-.title p {
+
+.header__title p {
     color: #f6df4e;
     text-align: center;
     margin-top: 60px;
     font-size: 38px;
     font-family: 'OTEnjoystoriesBA';
 }
-.quotes img {
-    width: 500px;
-    margin-top: 50px;
-    margin-left: 110px;
+
+
+.main__title{
+    margin-top: 30px;
 }
-.quotes p {
-    color: white;
+.quotes {
+    position: absolute;
+    width: 500px;
+    margin-top: 40px;
+    margin-left: -247px;
+}
+.main__title__write {
     font-size: 16px;
     text-align: center;
-    line-height: 10px;
+    line-height: 20px;
     width: 400px;
     height: 80px;
-    margin-top: -60px;
+    margin-top: -10px;
     margin-left: 170px;
 }
-.quotes strong {
+.main__title__write strong {
     font-family: 'GmarketSansMedium';
     font-size: 23px;
     font-weight: 900;
 }
-.typing_one {
-    margin-top: 100px;
-    margin-left: -80px;
+
+
+.main__write__text {
+    margin-top: 120px;
 }
-.typing_one p {
+.main__write__text p {
     font-size: 23px;
-    width: 550px;
+    width: 740px;
 }
-.typing_one input {
-    width: 240px;
-    height: 60px;
+.main__write-one {
+    width: 230px;
+    height: 55px;
     border-radius: 12px;
     border: none;
     font-family: 'GmarketSansMedium';
     font-size: 20px;
-    margin: 10px;
     padding-left: 30px;
-    text-overflow: 0.1;
 }
-
-.typing_two {
-    margin-top: 80px;
-}
-.typing_two p {
-    font-size: 21px;
-    width: 800px;
-    margin-left: -20px;
-}
-.typing_two input {
+.main__write-two {
     width: 210px;
     height: 55px;
     border-radius: 12px;
     border: none;
     font-family: 'GmarketSansMedium';
     font-size: 20px;
-    margin: -6px 10px 10px 10px;
-    padding-left: 20px;
+    margin-left: 10px;
+    padding-left: 30px;
 }
-.click {
-    display: flex;
+.main__write__bnt {
+    display: inline-block;
 }
-.click p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.main__write__bnt button {
+    display: inline-block;
     border-radius: 30px;
     background-color: #fced22;
     color: #5b2386;
@@ -135,44 +128,59 @@ body {
     font-size: 20px;
     font-weight: 700;
     margin-top: 70px;
-    margin-left: 150px;
+    margin-left: -30px;
 }
-
-.click img {
+.main__write__img {
+    position: absolute;
     width: 70px;
     height: 70px;
-    margin-top: 65px;
-    margin-left: 8px;
+    margin-top: 70px;
+}
+
+
+.main__text {
+    margin-top: 70px;
+}
+.main__text p {
+    font-size: 20px;
+}
+.main__text strong {
+    font-size: 50px;
+    font-family: 'GmarketSansBold';
+    padding: 10px;
+}
+.main__bnt{
+    margin-top: 80px;
+}
+.main__bnt__one {
+    border-radius: 30px;
+    background-color: #fced22;
+    color: #5b2386;
+    width: 270px;
+    height: 45px;
+    font-family: 'GmarketSansBold';
+    font-size: 20px;
+    font-weight: 700;
+}
+.main__bnt__two {
+    border-radius: 30px;
+    background-color: #fff;
+    color: #5b2386;
+    width: 170px;
+    height: 50px;
+    font-family: 'GmarketSansBold';
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.logo {
+    margin-top: 90px;
 }
 .logo img {
     width: 130px;
     height: 25px;
-    margin-top: 70px;
-    margin-left: 320px;
 }
 .logo p {
     font-size: 11px;
-    margin-top: 25px;
-    margin-bottom: -90px;
-    margin-left: 180px;
     text-align: center;
-}
-
-#no-mobile {
-    position: absolute;
-    z-index: 99;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 0;   
-}
-
-@media screen and (min-width: 900px) {
-    #no-mobile {
-        display: none;
-    }
 }

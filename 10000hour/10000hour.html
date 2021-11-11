@@ -10,40 +10,51 @@
 </head>
 
 <body>
-    <section>
-        <div class="clock">
-            <img src="./img/clock.png">
-        </div>
-        <div class="title">
-            <img src="./img/title.png">
+    <header>
+        <section class="header__title">
+            <img src="./img/clock.png" class="clock">
+            <img src="./img/title.png" class="title">
             <p>"연습은 어제의 당신보다 당신을 더 낫게 만든다."</p>
-        </div>
-        <div class="quotes">
-            <img src="./img/quotes.png">
-            <div>
+        </section>
+
+    </header>
+    <main>
+        <section class="main__title">
+            <img src="./img/quotes.png" class="quotes">
+            <article class="main__title__write">
                 <p><strong>1만 시간의 법칙</strong>은</p>
                 <p>어떤 분야의 전문가가 되기 위해서는</p>
                 <p>최소한 1만 시간의 훈련이 필요하다는 법칙이다.</p>
-            </div>
-            <div class="typing_one">
-                <p>나는 <input type="text" placeholder="예)프로그래밍"> 전문가가 될 것이다.</p>
-            </div>
-            <div class="typing_two">
-                <p>그래서 앞으로는 매일 하루에<input type="text" placeholder="예)5"> 시간씩 훈련할 것이다.</p>
-            </div>
-            <div class="click">
-                <p>나는 며칠 동안 훈련을 해야 1만 시간이 될까?</p>
-                <img src="./img/click.png">
-            </div>
-            <div class="logo">
-                <img src="./img/logo.png">
-                <p>※ 본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 WeNiv에 있습니다.</p>
-                <p>수정 밑 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.</p>
-            </div>
-    </section>
-    <div id="no-mobile">
-        <span>스크린이 너무 작아요... 다시 늘려주세요ㅜㅜ</span>
-    </div>
+            </article>
+            <article class="main__write__text">
+                <p>나는 <input type="text" placeholder="예)프로그래밍" class="main__write-one"> 전문가가 될 것이다.</p>
+                <p>그래서 앞으로는 매일 하루에 <input type="text" placeholder="예)5" class="main__write-two" required> 시간씩 훈련할 것이다.
+                </p>
+            </article>
+            <article class="main__write__bnt">
+                <button type="button">나는 며칠 동안 훈련을 해야 1만 시간이 될까?</button>
+                <img src="./img/click.png" class="main__write__img">
+            </article>
+            <article class="main__text">
+                <p>당신은 <strong>프로그래밍</strong> 전문가가 되기 위해서</p>
+                <p>대략 <strong>5110</strong>일 이상 훈련하셔야 합니다! :)</p>
+                <div class="main__bnt">
+                    <button type="button" class="main__bnt__one">훈련하러가기 GO!GO!</button>
+                    <button type="button" class="main__bnt__two">공유하기</button>
+                </div>
+
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <section class="logo">
+            <img src="./img/logo.png">
+            <p>※ 본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 WeNiv에 있습니다.</p>
+            <p>수정 밑 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.</p>
+        </section>
+    </footer>
+
 </body>
 
 </html>
