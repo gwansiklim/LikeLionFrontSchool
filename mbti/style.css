@@ -67,3 +67,19 @@
     text-align: center;
     width: 80%;
 }
+
+/* result.html */
+
+.result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.result img {
+    max-width: 500px;
+    width: 80%;
+}
