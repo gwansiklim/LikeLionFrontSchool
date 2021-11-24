@@ -1,0 +1,10 @@
+@mixin lim-style($x, $y) {
+    font-size: $x * $y + px;
+    @content
+} 
+
+div {
+    @include lim-style(10, 10) {
+        color: red;
+    }
+}
