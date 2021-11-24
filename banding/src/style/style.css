@@ -41,7 +41,7 @@ body{
     width: 100%;
     max-width: 386px;
     height:180px;
-    background: no-repeat center / 100% 100% url("../images/Logo_img.png");
+    background: no-repeat center / 100% 100% url(../images/Logo_img.png);
 }
 
 /* 자판기 스타일 */
@@ -87,7 +87,7 @@ body{
     left:0;
     z-index: 1;
     border-radius: 10px;
-    background:no-repeat center/60px 46px url("../images/Sold-out.png") rgba(0, 0, 0, 0.8);
+    background:no-repeat center/60px 46px url(../images/Sold-out.png) rgba(0, 0, 0, 0.8);
 }
 .vending-machine .list-item li.sold-out{
     pointer-events: none;
