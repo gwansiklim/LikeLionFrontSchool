@@ -38,4 +38,4 @@ alert(MyVal8);
 
 var name = "재현선생님";
 
-
+var 재현 = "ㅎㅎㅎㅎㅎㅎ";
