@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <h1 id="one">jQuery 실습</h1>
+    <p>hello</p>
+    <button class="btn1">클릭해!!!</button>
+    <p class="실습">jQuery 실습을 하고 있습니다.</p>
+    <img>
+    <script>
+        // document.getElementById('one').innerHTML = "!!!!";
+        $("#one").text("hello jQuery");
+        // $("p").hide();
+        $(".btn1").click(function () {
+            alert("클릭했네요?")
+        })
+        // $(".실습").text("실습중이에요!");
+        // $(".실습").text("<strong>실습</strong>중이에요!")
+        $(".실습").html("<strong>실습</strong>중이에요!");
+        $(".실습").css("color", "red");
+        $(".실습").css("backgroundColor", "blue");
+        $("img").attr("src", "a.jpg");
+        $("img").attr("data-name", "프로필").attr("data-hello", "world");
+    </script>
+</body>
+
+</html>
