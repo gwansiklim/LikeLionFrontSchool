@@ -9,6 +9,26 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
+<script>
+    $(function () { // 이것을 주석처리하면 실행이 안됩니다. html이 다 로드되지 않은 상태이기 때문에 그렇습니다.
+        $('.box').fadeOut(3000).fadeIn(3000);
+    })
+</script>
+<style>
+    .box {
+        width: 200px;
+        height: 200px;
+        background-color: palevioletred;
+
+    }
+
+    .box2 {
+        width: 100px;
+        height: 100px;
+        opacity: 0.3;
+        background-color: red;
+    }
+</style>
 
 <body>
     <h1 id="one">jQuery 실습</h1>
@@ -46,6 +66,15 @@
         <li>hello</li>
         <li>hello</li>
     </ul>
+    <div id="div1">hello world</div>
+    <div class="one blue">hello world</div>
+    <div class="two blue">hello world</div>
+    <p class="blue">hello world</p>
+    <div class="three">hello</div>
+    <div class="three blue">hello</div>
+    <div class="box">hello world</div>
+    <div class="box2">hello world</div>
+    <button class="btn3">눌러봐요!</button>
     <script>
         // document.getElementById('one').innerHTML = "!!!!";
         $("#one").text("hello jQuery");
@@ -65,10 +94,44 @@
             alert(메모장값);
         })
         $(".p3").css("color", "red").css("backgroundColor", "blue");
+
+        //퀴즈 !
         $(".items").parent().css("backgroundColor", "blue");
         $(".items:nth-child(2)").css("color", "red");
-        $(".ul2").children("li:nth-child(-n + 3)").css("color", "green");
-        $(".ul2").children("li:nth-child(n + 4)").css("color", "red");
+        $(".ul2").children("li:lt(3)").css("color", "green");
+        $(".ul2").children("li:gt(6)").css("color", "red");
+        $("ul").append("<li>hello world end</li>");
+        $("ul").prepend("<li>hello world start</li>");
+        $("ul").after("<h2>끝!</h2>");
+        $("ul").before("<h2>시작!!</h2>");
+
+        $("#div1").remove();
+        $("div1").addClass("important");
+        $(".one, .two, p").removeClass("blue");
+        $(".three").toggleClass("blue")
+        $(".box").fadeOut(3000).fadeIn(3000);
+        // $(".box").click(function () {
+        //     $(this).stop()
+        // });
+        $(function () {
+            $('.box').click(function () {
+                $(this).hide();
+            });
+        })
+
+        $(".btn3").click(function () {
+            $(".box2").animate({
+                width: "300px",
+                height: "300px",
+                opacity: 1,
+            }, "slow");
+        });
+
+        $(".box2").hover(function () {
+            $(this).css("bacground-clolr", "yellow");
+        }, function () {
+            $(this).css("background-color", "blue");
+        });
     </script>
 </body>
 
