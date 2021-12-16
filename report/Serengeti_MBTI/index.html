@@ -23,9 +23,15 @@
                 aria-valuemax="100"></div>
         </div>
         <h2 class="text-center">문제</h2>
-        <button type="button" class="btn btn-primary mt-5">Primary</button>
-        <button type="button" class="btn btn-primary mt-5">Primary</button>
+        <input id="type" type="hidden" value="EI">
+        <button id="A" type="button" class="btn btn-primary mt-5">Primary</button>
+        <button id="B" type="button" class="btn btn-primary mt-5">Primary</button>
     </article>
+
+    <input type="hidden" id="EI" value="0">
+    <input type="hidden" id="SN" value="0">
+    <input type="hidden" id="TF" value="0">
+    <input type="hidden" id="JP" value="0">
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -39,7 +45,11 @@
             $(".start").hide();
             $(".question").show();
         }
-
+        $('#A').click(function () {
+            var type = $('#type').val();
+            var preValue = $('#' + type).val();
+            $('#' + type).val(parseInt(preValue) + 1);
+        });
     </script>
 
 </body>
