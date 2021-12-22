@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chartjs</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-md-6">
+            <canvas id="myChartOne"></canvas>
+        </div>
+    </div>
+
+
+    <script>
+        const labels = [
+            '1월',
+            '2월',
+            '3월',
+            '4월',
+            '5월',
+            '6월',
+        ];
+        const data = {
+            labels: labels,
+            datasets: [{
+                label: '매출액 현황',
+                backgroundColor: 'rgb(255, 99, 132)',
+                borderColor: 'rgb(255, 99, 132)',
+                data: [1, 2, 5, 2, 2, 3, 4],
+            }]
+        };
+
+        const config = {
+            type: 'line', // pie, bar, line, doughnut, polarArea
+            data: data,
+            options: {}
+        };
+    </script>
+
+    <script>
+        // === include 'setup' then 'config' above ===
+
+        const myChart = new Chart(
+            document.getElementById('myChartOne'),
+            config
+        );
+    </script>
+</body>
+
+</html>
