@@ -1,5 +1,7 @@
 var express = require('express');
 var router = express.Router();
+const loginCheck = require('../module/loginCheck');
+const upload = require('../module/imageUpload');
 
 let arr = [];
 
@@ -38,6 +40,23 @@ router.delete("/delete/:id", (req, res) => {
   res.status(200).json({
     message: "delete success",
     result: arr
+  })
+})
+
+/* middleware사용법 */
+router.get("/", loginCheck, (req, res) => {
+  res.status(200).json({
+    message: "login success!!",
+
+  })
+})
+
+/* multer 사용법 */
+router.post('/upload', upload.single("image"), (req, res) => {
+  const file = req.file;
+  console.log(file);
+  res.status(200).json({
+    message: "upload success!!"
   })
 })
 
