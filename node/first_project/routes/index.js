@@ -24,8 +24,8 @@ router.post("/create", (req, res) => {
 
 /* PUT */
 router.put("/update/:id", (req, res) => {
-  const {id} = req.params;
-  const {data} =req.body;
+  const { id } = req.params;
+  const { data } =req.body;
   arr[id] = data;
   res.status(200).json({
     message: "update success",
@@ -35,7 +35,7 @@ router.put("/update/:id", (req, res) => {
 
 /* DELETE */
 router.delete("/delete/:id", (req, res) => {
-  const {id} = req.params;
+  const { id } = req.params;
   arr.splice(id, 1);
   res.status(200).json({
     message: "delete success",
