@@ -3,10 +3,10 @@ var router = express.Router();
 
 // 세션 유저 정보
 const userInfo = {
-  lee: {
-    password: "1231233",
+  lee : {
+    password: "123123",
   },
-  kim: {
+  kim : {
     password: "456456",
   },
 };

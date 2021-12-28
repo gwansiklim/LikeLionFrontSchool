@@ -1,4 +1,4 @@
-
+// middleware
 const loginCheck = (req, res, next) => {
   const userLogin = true;
   if (userLogin) {

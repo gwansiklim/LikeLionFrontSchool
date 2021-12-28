@@ -12,6 +12,8 @@ const dbConfig = require("../config/dbConfig.json");
 /**
  * Get port from environment and store in Express.
  */
+
+// mongodb compass연결 하기!
 const mongoose = require("mongoose");
 const db = mongoose.connection;
 db.on("error", console.error);
