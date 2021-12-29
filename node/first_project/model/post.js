@@ -8,7 +8,8 @@ const postScheam = new Schema({
   title : String,
   content : String,
   create_date : {
-    type: Date, default: new Date(),
+    type: Date, 
+    default: new Date(),
   }
 });
 
